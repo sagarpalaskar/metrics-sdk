@@ -1,0 +1,28 @@
+{
+  "name": "grafana_metrics_sdk",
+  "version": "1.0.0",
+  "description": "grafana_metrics_sdk",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": " npm run build"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [],
+  "author": "Nitor",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "prom-client": "^15.1.3"
+  }
+}
